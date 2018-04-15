@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TrinityEngine</RootNamespace>
     <AssemblyName>TrinityEngine</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -78,10 +78,18 @@
     <Compile Include="App\Debug.cs" />
     <Compile Include="App\Globals.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Debug\Debug.cs" />
+    <Compile Include="Debug\DebugMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TrinityHAL\TrinityHAL.csproj">
+      <Project>{1e0ddf51-d3fa-45fc-be5e-1e73261c979f}</Project>
+      <Name>TrinityHAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

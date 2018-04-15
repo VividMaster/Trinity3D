@@ -8,8 +8,9 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Example1Simple</RootNamespace>
     <AssemblyName>Example1Simple</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,6 +47,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Engine\TrinityEngine\HAL\HALDirectX12\HALDirectX12.csproj">
+      <Project>{779986e2-2c7c-4e0b-8438-6f1c7ff2d30e}</Project>
+      <Name>HALDirectX12</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Engine\TrinityEngine\TrinityEngine.csproj">
+      <Project>{c0db55b3-05cd-4b33-80cd-bb104d157707}</Project>
+      <Name>TrinityEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Engine\TrinityHAL\TrinityHAL.csproj">
+      <Project>{1e0ddf51-d3fa-45fc-be5e-1e73261c979f}</Project>
+      <Name>TrinityHAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

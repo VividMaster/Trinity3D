@@ -34,7 +34,7 @@ namespace TrinityHAL
         /// <value>
         /// A successful result.
         /// </value>
-        public HALResult Success
+        public static HALResult Success
         {
             get
             {
@@ -50,14 +50,14 @@ namespace TrinityHAL
         /// <value>
         /// A failed result.
         /// </value>
-        public HALResult Fail
+        public static HALResult Fail
         {
 
             get
             {
                 HALResult res = new HALResult();
-                res.Outcome = Result.Failed
-                    return res;
+                res.Outcome = Result.Failed;
+                return res;
             }
         }
 

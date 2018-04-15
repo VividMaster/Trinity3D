@@ -15,16 +15,29 @@ namespace HALDirectX12
     /// <seealso cref="TrinityHAL.HALBase" />
     public class HALDX12 : HALBase
     {
-       
+        /// <summary>
+        /// Initializes a new instance of the <see cref="HALDX12"/> class.
+        /// </summary>
         public HALDX12()
         {
 
         }
 
-        public HALResult CreateOutput(int width,int height,bool fullscreen)
+        /// <summary>
+        /// When overridden,this method should create the graphical output
+        /// of the HAL - be it a window, or full-screen display.
+        /// Provided to it are the required parameters.
+        /// </summary>
+        /// <param name="width">The width of the output.</param>
+        /// <param name="height">The height of the output.</param>
+        /// <param name="fullscreen">if set to <c>true</c> [full-screen].</param>
+        /// <returns></returns>
+        public override HALResult CreateOutput(int width,int height,bool fullscreen)
         {
             var res = HALResult.Success;
 
+
+            return res;
 
 
         }

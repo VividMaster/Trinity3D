@@ -19,6 +19,18 @@ namespace TrinityHAL
         {
 
         }
-        
+        /// <summary>
+        /// When overridden,this method should create the graphical output 
+        /// of the HAL - be it a window, or full-screen display.
+        /// Provided to it are the required parameters.
+        /// </summary>
+        /// <param name="width">The width of the output.</param>
+        /// <param name="height">The height of the output.</param>
+        /// <param name="fullscreen">if set to <c>true</c> [full-screen].</param>
+        /// <returns></returns>
+        public virtual HALResult CreateOutput(int width,int height,bool fullscreen)
+        {
+            return null;
+        }
     }
 }

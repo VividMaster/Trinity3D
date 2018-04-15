@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrinityEngine.App
 {
-    class Debug
-    {
-    }
+   
     /// <summary>
     /// The enumeration for deciding which level of debug reporting
     /// your application should give.
