@@ -12,6 +12,9 @@ namespace TrinityEngine.App
     /// </summary>
     public static class Globals
     {
-        public 
+        /// <summary>
+        /// The applications user-given metrics.
+        /// </summary>
+        public static AppMetrics Metrics;
     }
 }

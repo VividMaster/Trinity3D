@@ -17,6 +17,7 @@ bin-release/
 *.exe
 *.pdb
 *.db
+*.xml
 
 packages/
 obj/

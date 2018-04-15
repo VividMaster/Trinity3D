@@ -20,12 +20,21 @@ namespace TrinityEngine.App
         protected RenderForm RenForm = null;
 
         /// <summary>
-        /// The intenral SharpDX - RenderLoop class.
+        /// The internal SharpDX - RenderLoop class.
         /// </summary>
         protected RenderLoop RenLoop = null;
-         
-        public Application(int width,int height,string title,bool fullscreen)
+
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Application"/> class.
+        /// The application class should be referenced(Via base(...)) when constructing
+        /// your upper level class that inherits the <see cref="Application"/> class.
+        /// </summary>
+        /// <param name="metrics">The desired application <see cref="AppMetrics"/> metrics.</param>
+        public Application(AppMetrics metrics)
         {
+            Globals.Metrics = metrics;
+            RenForm = new RenderForm(metrics.Title);
 
         }
 
